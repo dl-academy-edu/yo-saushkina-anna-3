@@ -1,0 +1,29 @@
+*, *:after, *:before {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+body {
+  font-family: "OpenSans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  }
+a {
+  list-style: none;
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  margin: 0 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.flex-wrapper {
+  display: flex;
+}
