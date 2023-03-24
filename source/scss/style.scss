@@ -1,0 +1,56 @@
+@import "_variables.base";
+@import "_mixins";
+
+/*
+  Import vendor libraries
+*/
+@import "vendor/_normalize";
+
+/*
+  Import utils classes and base styles
+*/
+@import "_utils";
+@import "_base";
+
+/*
+  Import all other blocks
+*/
+
+@import "_blocks/container";
+@import "_blocks/header";
+@import "_blocks/footer";
+@import "_blocks/popup";
+@import "_blocks/link-btn";
+@import "_blocks/pagination";
+@import "_blocks/breadcrumbs";
+
+
+@import "fonts";
+
+
+$brownC: #725F5B;
+$whiteC: #FFFFFF;
+$blackC: #1E0606;
+$transition: 0.4s;
+
+// // scroll 
+.scroll-off {
+	position: fixed;
+	left: 30px;
+	top: 30px;
+}
+.scroll-on {
+	position: fixed;
+	left: 30px;
+	top: 60px;
+	pointer-events: none;
+}
+.disable-scroll {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
