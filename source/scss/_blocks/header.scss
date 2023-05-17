@@ -1,0 +1,68 @@
+// $greyColor: #828282;
+
+.header {
+    // width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 33px;
+    margin-bottom: 40px;
+    border-bottom: #828282 1px solid;
+    padding-bottom: 32px;
+    // margin-right: 60px;
+
+    font-weight: bold;
+
+    justify-content: space-between;
+
+        @media (max-width: $media-tablet) {
+            margin: 0 60px;
+        }
+        @media (max-width: $media-tablet-landscape) {
+            margin-top: 35px;
+            margin-right: 60px;
+        }
+        @media (max-width: $media-desktop) {
+            max-width: 1000px;
+        }
+
+    &__home {
+        margin: 0 0;
+        cursor: pointer;
+    }
+    &__list {
+        // margin: 0 0;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-right: 0;
+    }
+    &__nav {
+        margin: 0 0;     
+}
+}
+.nav {
+    &__item {
+        color: #828282;
+    }
+    &__link {
+        color: #828282;
+    }
+    &__sign-in-btn {
+        background: transparent;
+        border: none;
+        font-weight: bold;
+        color: #828282;
+    }
+    &__sign-in-btn:hover {
+        cursor: pointer;
+        color: black;
+        transition: 0.4s;
+    }
+    &__sign-in-btn:active {
+        opacity: 50%;
+        transition: 0.4s;
+    }
+}

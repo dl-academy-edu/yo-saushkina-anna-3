@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog</title>
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    @@include('blocks/header.html')
+    <main>
+        <section class="filter container">
+            <h2 class="blog__header">My blog</h2>
+            <ul class="">
+            </ul>
+            <div class="views">
+                <p class="__text">Views</p>
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+            </div>
+
+            <div class="comments">
+                <p class="__text">Comments</p>
+                <ul>
+                    <li>
+                        <label for="check"></label>
+                        <input type="checkbox" id="check">
+                    </li>
+                    <li>
+                        <label for="check"></label>
+                        <input type="checkbox" id="check">
+                    </li>
+                    <li>
+                        <label for="check"></label>
+                        <input type="checkbox" id="check">
+                    </li>
+                </ul>
+            </div>
+
+        <div class="div">
+            <p class="__text">How show?</p>
+                <input type="radio">
+                <input type="radio">
+        </div>
+            <div class="views">
+                <p class="__text">Sort by</p>
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+            </div>
+
+            <button>reset from</button>
+            <button class="btn">reset</button>
+
+            <input type="textarea">
+            <button class="btn">Search</button>
+
+
+        </section>
+
+
+        <section class="blog-posts container">
+            <ul class="blog-posts__list">
+                <li class="blog-posts__post">
+                    <picture></picture>
+                    <div class="tag"></div>
+                    <div class="date">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <h2 class="blog-posts__header"></h2>
+                    <p class="blog-posts__text"></p>
+                    <a class="blog-posts__link" href="#">Go to the post</a>
+                </li>
+                <li class="blog-posts__post">
+                    <picture></picture>
+                    <div class="tag"></div>
+                    <div class="date">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <h2 class="blog-posts__header"></h2>
+                    <p class="blog-posts__text"></p>
+                    <a class="blog-posts__link" href="#">Go to the post</a>
+                </li>
+                <li class="blog-posts__post">
+                    <picture></picture>
+                    <div class="tag"></div>
+                    <div class="date">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <h2 class="blog-posts__header"></h2>
+                    <p class="blog-posts__text"></p>
+                    <a class="blog-posts__link" href="#">Go to the post</a>
+                </li>
+                <li class="blog-posts__post">
+                    <picture></picture>
+                    <div class="tag"></div>
+                    <div class="date">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <h2 class="blog-posts__header"></h2>
+                    <p class="blog-posts__text"></p>
+                    <a class="blog-posts__link" href="#">Go to the post</a>
+                </li>
+                <li class="blog-posts__post">
+
+                </li>
+            </ul>
+            <div class="pagination">
+                <button class="pagination__btn-left"></button>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                </ul>
+                <button class="pagination__btn-right"></button>
+            </div>
+        </section>
+<div class="pagination"></div>
+    </main> 
+    @@include('blocks/footer.html')
+</body>
+</html>
