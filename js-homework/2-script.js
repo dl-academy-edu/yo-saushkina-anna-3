@@ -2,11 +2,13 @@
 // 1. Создать программу, которая запрашивает у пользователя число, в консоль выводит числа от 1 до этого числа, но пропускает числа, которые кратны (делятся без остатка) 4-м.
 
   let userNum = +prompt('Введите число для вывода в консоль');
+  if (isNaN(userNum))
+  { alert("Ошибка!"); 
+  }
   for (let i = 0; i <= userNum; i++) {
     if (i % 4 == 0) continue;
     console.log(i);
-    alert (i);
-  } 
+  }; 
 
 
   //2. Написать программу, которая будет получать число и с помощью цикла while считать его факториал.
@@ -18,8 +20,12 @@ let i = 0;
     factorialResult *= i + 1;
     i++ 
   }
+  if (isNaN(factorial))
+  {
+    alert("Ошибка!");
+  } else {
     console.log(factorialResult);
-    alert (factorialResult);
+  };
 
 
   //3. Написать программу, которая будет получать число и его степень, с помощью цикла for возвести число в степень.
@@ -30,16 +36,21 @@ let i = 0;
     for( i = 0; i < degree; i++ ) {
       degreeResult *= number;
     }
-      alert (degreeResult);
+      if (isNaN(number, degree))
+      {
+        alert("Ошибка!");
+      } else {
+        alert (degreeResult);
+      };
  
 
   //4. Написать проверку, для программ 1-3, чтобы если пользователь вводил неверные данные, например слово вместо числа, то должно вывестись сообщение об ошибке.
-
-//   let userData = +prompt(); 
-//  if (typeof userData === String)
-//   {
-//     alert("Ошибка!");
-//   }
+ 
+  // if (isNaN())
+  //     {
+  //       alert("Ошибка!");
+  //     };
+  //  Проверка добавлена в программы 1-3
 
 
   //5. Написать игру “Угадай число”
@@ -48,7 +59,4 @@ let i = 0;
     let userNumber = +prompt('Угадай число!'); 
     if ( secretNumber !== userNumber ) continue; 
       alert ("Ты угадал!");
-    }
-
-
- 
+    };

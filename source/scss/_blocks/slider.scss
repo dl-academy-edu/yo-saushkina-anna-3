@@ -1,0 +1,128 @@
+
+.slider {
+    max-width: 1000px;
+   margin: 50px auto;
+   &__wrapper {
+    overflow: hidden;
+   }
+   &__inner-wrapper {
+    display: flex;
+    height: 100%;
+    transition: transform;
+   }
+   &__slide {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    height: 465px;
+  
+    &:nth-child(4n + 1) {
+        background-color: #864646;
+       }
+       &:nth-child(4n + 2) {
+        background-color: #5f8646;
+       }
+       &:nth-child(4n + 3) {
+        background-color: #4526cf;
+       }
+       &:nth-child(4n + 4) {
+        background-color: #faea0c;
+       }
+   }
+   &__bottom-panel {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    justify-content: space-between;
+
+   } 
+   &__btn-left {
+    content: '';
+    background-image: url(../img/icons/btn-right.svg);
+    background-color: transparent;
+    transform: scaleX(-1);
+    width: 42px;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s;
+
+   }
+
+   &__btn-right {
+    content: '';
+    background-image: url(../img/icons/btn-right.svg);
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s; 
+   }
+
+   &__btn-left:not(:disabled):hover,
+   &__btn-left:not(:disabled):focus,
+   &__btn-right:not(:disabled):hover,
+   &__btn-right:not(:disabled):focus {
+    cursor: pointer;
+    transition: all 0.4s;
+    content: '';
+    background-image: url(../img/icons/grey-btn.svg);
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+   }
+
+   &__btn-left:disabled,
+   &__btn-right:disabled
+   {
+    opacity: .4;
+   pointer-events: none;
+   user-select: none;
+}
+
+
+   &__pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    padding: 0;
+   }
+   &__dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    background-color: #E5E5E5;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.4s;
+   }
+   &__dot:hover {
+    background-color:    #828282;
+   }
+
+   &__dot:not(:last-child) {
+    margin-right: 5px;
+   }
+   &__dot--active {
+    background-color: #070707;
+   }
+//    &__dot:not(.slider__dot--active):hover,
+//    &__dot:not(.slider__dot--active):focus {
+//     background-color: #828282;
+//     transition: 0.4s;
+//    }
+
+   &__dot:active {
+    background-color: #828282;
+    opacity: 50%;
+   }
+}
+

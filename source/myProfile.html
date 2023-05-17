@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    @@include('blocks/header.html')
+    <section class="profile container">
+        <h2 class="profile__header">
+            My profile
+        </h2>
+        <div class="profile__wrapper">
+            <picture>
+                <source srcset="./img/banner.jpg" media="(max-width:1000px)">
+                <img class="profile__photo" src="./img/profile-avatar.png
+                " alt="avatar">
+            </picture> 
+            <div class="profile__info">
+                <ul class="profile__item-list">
+                    <li class="profile__text">Name:</li>
+                    <li class="profile__text">Surname:</li>
+                    <li class="profile__text">Email:</li>
+                    <li class="profile__text">Password:</li>
+                    <li class="profile__text">Location:</li>
+                    <li class="profile__text">Age:</li>
+                </ul>
+                <button class="profile__btn btn">Change password</button>
+                <button class="profile__btn btn">Change other data</button>
+                <button class="profile__btn btn">Delete account</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

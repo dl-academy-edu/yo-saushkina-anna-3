@@ -1,0 +1,25 @@
+<header class="header container">
+    <a class="header__home" href="./index.html">Home</a> 
+    <nav class="header__nav">
+        <ul class="header__list nav">
+            <li class="nav__item"><a href="./myBlog.html">My blog</a></li>
+            <li class="nav__item"><button class="nav__sign-in-btn js__sign" aria-label="open sign in modal window">Sign in</button></li>
+            <li class="nav__item"><button class="nav__sign-in-btn js__register" aria-label="open register modal window">Register</a></li>
+                <a href="./myProfile.html">myprofile</a>
+        </ul>
+    </nav>
+</header>
+<div class="form">
+    <div class="form__wrapper">
+        @@include('blocks/signinmodal.html')
+        <span class="form__close">&times;</span>
+    </div>
+    <div class="form__overlay"></div>
+</div>
+<div class="register">
+    <div class="register__wrapper">
+        @@include('blocks/registerModal.html')
+        <span class="register__close">&times;</span>
+    </div>
+    <div class="register__overlay"></div>
+</div>

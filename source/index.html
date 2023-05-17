@@ -2,11 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Main</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
+    @@include('blocks/header.html')
+    <main>
+        <section class="banner">
+            <div class="banner__text container">
+                <h2 class="banner__name">Anna Saushkina</h2>
+                <p class="banner__info">Future front-end developer 25 years old, Tolyatti</p>
+            </div>
+                <div class="slider  container">
+                    <div class="slider__wrapper slider--js">
+                        <div class="slider__inner-wrapper container">
+                                <div class="slider__slide"> 
+                                    <picture>
+                                        <source srcset="./img/banner.jpg" media="(max-width:1000px)">
+                                        <img class="slider__photo" src="./img/banner.jpg
+                                        " alt="avatar">
+                                    </picture> 
+                                </div>
+                                <div class="slider__slide"></div>
+                                <div class="slider__slide"></div>
+                                <div class="slider__slide"></div>
+                        </div>
+                    </div>
+                    <div class="slider__bottom-panel container">
+                        <button class="slider__btn-left left--js"></button>
+                        <div class="slider__pagination"></div>
+                        <button class="slider__btn-right right--js"></button>  
+                    </div>
+                </div>
+        </section>
+        <section class="about-me container">
+                <h2 class="about-me__header">About me</h2>
+                <ul class="about-me__list">
+                    <li class="about-me__list-item">
+                        <p class="about-me__text"></p>
+                        Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel sagittis.</li>
+                    <li class="about-me__list-item">
+                        <p class="about-me__text"></p>
+                        Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</li>
+                    <li class="about-me__list-item">
+                        <p class="about-me__text"></p>
+                        Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique. </li>
+                </ul>
+        </section>
+        <section class="skills container">
+            <h2 class="skills__header">Skills</h2>
+                <p class="skills__text">I work in such programs as</p>
+                <ul class="skills__list">
+                    @@include('blocks/skill.html', {
+                        "src": "html",
+                        "alt": "html icon",
+                        "name": "HTML 5",
+                        "percent": "80%",
+                        "value": "8",
+                        
+                    })
+                    @@include('blocks/skill.html', {
+                        "src": "css",
+                        "alt": "css icon",
+                        "name": "CSS",
+                        "percent": "50%",
+                        "value": "5",
+                    })
+                    @@include('blocks/skill.html', {
+                        "src": "js",
+                        "alt": "JavaScript icon",
+                        "name": "JavaScript",
+                        "percent": "10%",
+                        "value": "1",
+                    })
+                    @@include('blocks/skill.html', {
+                        "src": "git",
+                        "alt": "github icon",
+                        "name": "Git/Github",
+                        "percent": "20%",
+                        "value": "2",
+                    })
+                    @@include('blocks/skill.html', {
+                        "src": "figma",
+                        "alt": "figma",
+                        "name": "Figma",
+                        "percent": "70%",
+                        "value": "7",
+                    })
+                </ul>
+        </section>
+        <section class="portfolio container">
+            <h2 class="portfolio__header">Portfolio</h2>
+
+<!-- Slider main container -->
+<div class="swiper container">
+    <div class="swiper-wrapper container">
+      <div class="swiper-slide ">
+        <p class="swiper__text container"><span class="swiper__name">Learning site for DL Academy courses</span> A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
+        <picture>
+            <source srcset="./img/portfolio.png" media="(max-width:1000px)">
+            <img src="./img/portfolio.png" alt="portfolio case">
+        </picture>
+
+      </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+</div>
     
+
+        </section>
+        @@include('blocks/footer.html')
+    </main>
+    <script src="js/signIn.js" defer></script>
+    <script src="js/register.js" defer></script>
+    <script src="js/validation.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/swiper.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 </html>

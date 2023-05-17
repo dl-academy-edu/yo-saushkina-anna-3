@@ -1,0 +1,22 @@
+.banner {
+    max-width: 100%;
+    &__text {
+      display: flex;
+      justify-content: left;
+      margin-bottom: 36px;
+      align-items: end;
+    }
+    &__name {
+        font-size: 47px;
+        max-width: 280px;
+        line-height: 57px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &__info {
+        max-width: 226px;
+        margin-left: 0;
+    }
+}
