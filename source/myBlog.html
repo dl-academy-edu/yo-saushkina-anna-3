@@ -10,123 +10,65 @@
 <body>
     @@include('blocks/header.html')
     <main>
-        <section class="filter container">
+        <section class="blog container">
             <h2 class="blog__header">My blog</h2>
-            <ul class="">
-            </ul>
-            <div class="views">
-                <p class="__text">Views</p>
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
+            <form class="filter" action="#">
+                <div class="filter__wrap">
+                    <p class="filter__text">Tags</p>
+                </div>
+                <div class="filter__wrap">
+                    <p class="filter__text">Views</p>
+                    <input type="filter__radio">
+                    <input type="filter__radio">
+                    <input type="filter__radio">
+                </div>
+    
+                <div class="filter__wrap">
+                    <p class="filter__text">Comments</p>
+                    <ul class="filter__tags">
+                        <li>
+                            <label for="check"></label>
+                            <input type="checkbox" id="check">
+                        </li>
+                        <li>
+                            <label for="check"></label>
+                            <input type="checkbox" id="check">
+                        </li>
+                        <li>
+                            <label for="check"></label>
+                            <input type="checkbox" id="check">
+                        </li>
+                    </ul>
+                </div>
+    
+            <div class="filter__wrap">
+                <p class="filter__text">How show?</p>
+                    <input type="filter__radio">
+                    <input type="filter__radio">
             </div>
-
-            <div class="comments">
-                <p class="__text">Comments</p>
-                <ul>
-                    <li>
-                        <label for="check"></label>
-                        <input type="checkbox" id="check">
-                    </li>
-                    <li>
-                        <label for="check"></label>
-                        <input type="checkbox" id="check">
-                    </li>
-                    <li>
-                        <label for="check"></label>
-                        <input type="checkbox" id="check">
-                    </li>
-                </ul>
+                <div class="filter__wrap">
+                    <p class="filter__text">Sort by</p>
+                    <input type="filter__radio">
+                    <input type="filter__radio">
+                    <input type="filter__radio">
+                </div>
+                <div class="filter__wrap">
+                    <button class="filter__reset-from">reset from</button>
+                    <button class="filter__btn btn">Reset</button>
+                </div>
+            </form>
+            <div class="filter__search">
+                <input type="textarea">
+                <button class="btn">Search</button>
             </div>
-
-        <div class="div">
-            <p class="__text">How show?</p>
-                <input type="radio">
-                <input type="radio">
-        </div>
-            <div class="views">
-                <p class="__text">Sort by</p>
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-            </div>
-
-            <button>reset from</button>
-            <button class="btn">reset</button>
-
-            <input type="textarea">
-            <button class="btn">Search</button>
-
-
+           
         </section>
 
-
-        <section class="blog-posts container">
-            <ul class="blog-posts__list">
-                <li class="blog-posts__post">
-                    <picture></picture>
-                    <div class="tag"></div>
-                    <div class="date">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <h2 class="blog-posts__header"></h2>
-                    <p class="blog-posts__text"></p>
-                    <a class="blog-posts__link" href="#">Go to the post</a>
-                </li>
-                <li class="blog-posts__post">
-                    <picture></picture>
-                    <div class="tag"></div>
-                    <div class="date">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <h2 class="blog-posts__header"></h2>
-                    <p class="blog-posts__text"></p>
-                    <a class="blog-posts__link" href="#">Go to the post</a>
-                </li>
-                <li class="blog-posts__post">
-                    <picture></picture>
-                    <div class="tag"></div>
-                    <div class="date">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <h2 class="blog-posts__header"></h2>
-                    <p class="blog-posts__text"></p>
-                    <a class="blog-posts__link" href="#">Go to the post</a>
-                </li>
-                <li class="blog-posts__post">
-                    <picture></picture>
-                    <div class="tag"></div>
-                    <div class="date">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <h2 class="blog-posts__header"></h2>
-                    <p class="blog-posts__text"></p>
-                    <a class="blog-posts__link" href="#">Go to the post</a>
-                </li>
-                <li class="blog-posts__post">
-
-                </li>
-            </ul>
-            <div class="pagination">
+        <div class="blog-post--js"></div>
+                
+            <section class="pagination container">
                 <button class="pagination__btn-left"></button>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                </ul>
+                <div class="pagination"></div>
                 <button class="pagination__btn-right"></button>
             </div>
         </section>

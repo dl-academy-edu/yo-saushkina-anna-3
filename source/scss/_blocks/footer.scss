@@ -31,15 +31,21 @@
         }
     }
     &__socials-list {
-    max-width: 320px;
+        display: flex;
+        flex-flow: column wrap;
+
+    max-width: 380px;
+    width: 100%;
     margin-bottom: 40px;
- 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     }
    &__social-item {
-    // min-width: 60px;
-    display: inline-block;
-    align-items: center;
-    // justify-content: center;
+   padding-bottom: 10px;
+   padding-right: 5px;
    }
    &__meta {
     font-size: 14px;

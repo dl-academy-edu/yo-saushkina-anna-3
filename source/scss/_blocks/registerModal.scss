@@ -1,71 +1,76 @@
 .register {
-  visibility: hidden;
-    right: 0;
-    left: 0;
-
+    visibility: hidden;
+      right: 0;
+      left: 0;
+      top: 7%;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      opacity: 0;
+  
+      z-index: 4;
+      transition: 0.4s;
+  &__form {
+          border: 2.5px solid #070707;
+          padding: 40px 40px;
+          width: 680px;
+          height: 533px;
+          background-color: #fff;
+  }
+  &__email-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    opacity: 0;
-
-    z-index: 4;
-    transition: 0.4s;
-&__form {
-        border: 2.5px solid #070707;
-        padding: 40px 40px;
-        width: 680px;
-        height: 533px;
-        background-color: #fff;
-}
-&__email-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-    &__wrapper {
-        display: flex;
-        z-index: 3;
-      }
-      &__inner-wrapper {
-        margin: 0 0;
-      }
-    &__overlay {
+    flex-direction: column;
+  }
+      &__wrapper {
+          display: flex;
+          z-index: 3;
+        }
+        &__inner-wrapper {
+          margin: 0 0;
+          padding-right: 15px;
+        }
+      &__overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: rgba(255, 255, 255, 0.8);
+        }
+      &__open {
         position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: rgba(255, 255, 255, 0.8);
+        visibility: visible;
+        opacity: 1;
+    }
+    &__close {
+            width: 32px;
+            height: 32px;
+            background-color: transparent;
+            color: #828282;
+            font-size: 72px;
+            cursor: pointer;
+    }
+    &__checking {
+      display: flex;
+      align-items: center;
+    }
+      &__checkbox-input { 
+        border: 2.5px solid #E5E5E5;
+        height: 19px;
+        width: 19px;
+        border-radius: 3px;
+  
       }
-    &__open {
-      position: fixed;
-      visibility: visible;
-      opacity: 1;
+      &__checkbox-label {
+        color: #E5E5E5;
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+      }
+      &__btn{
+        margin-top: 20px;
+      }
   }
-  &__close {
-          width: 32px;
-          height: 32px;
-          background-color: transparent;
-          color: #828282;
-          font-size: 72px;
-          cursor: pointer;
-  }
-  &__checking {
-    display: flex;
-    align-items: center;
-  }
-    &__checkbox-input { 
-      border: 2.5px solid #E5E5E5;
-      height: 19px;
-      width: 19px;
-      border-radius: 3px;
-
-    }
-    &__checkbox-label {
-      color: #E5E5E5;
-      font-family: Gilroy;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 16px;
-    }
-}
